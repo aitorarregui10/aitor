@@ -3,16 +3,15 @@ package com.softtek.modelo;
 public class Tablas {
     private int tabla;
 
-    public Tablas(int tabla) {
-        this.tabla = tabla;
+    public String multiplicacion() {
+        String text = "";
+        for (int i = 0; i <= 10; i++) {
+            text+= tabla+" x "+ i + " = " + tabla*i + "\n";
+        }
+        return text;
     }
 
-
-    public String multiplicar() {
-        String texto = "";
-        for (int i = 0; i <= 10; i++) {
-            texto+= tabla+" x "+ i + " = " + tabla*i + "\n";
-        }
-        return texto;
+    public Tablas(int tabla) {
+        this.tabla = tabla;
     }
 }

@@ -1,4 +1,4 @@
-package com.softtek.presentacion;
+package com.softtek.modelo;
 
 public class Campos {
 
@@ -6,6 +6,10 @@ public class Campos {
 
 
     public Campos() {
+    }
+
+    public Campos(int x) {
+        this.x = x;
     }
 
     public void incrementar () {
@@ -16,4 +20,3 @@ public class Campos {
         System.out.println("El resultado es: " + x);
     }
 }
-
